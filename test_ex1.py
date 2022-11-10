@@ -23,7 +23,7 @@ class TestEx1(unittest.TestCase):
 
 class TestEx1_Recursion(unittest.TestCase):
     def setUp(self):
-        safe = sys.getrecursionlimit()
+        self.safe = sys.getrecursionlimit()
         sys.setrecursionlimit(40) # this is a hackish value guesstimated.
     
     def tearDown(self) -> None:
